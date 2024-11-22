@@ -23,12 +23,6 @@ async function main() {
     await mongoose.connect('mongodb://127.0.0.1:27017/fakewhatsapp');
 }
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 7befdc78596eba05188d00225c936ef475ff2a3c
 //Index route
 app.get("/chats",asyncWrap( async (req, res) => {
         let chats = await Chat.find();
